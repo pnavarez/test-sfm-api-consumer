@@ -4,17 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { IboComponent } from './ibo/ibo.component';
+
+import { IboService } from './ibo.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IboComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [IboService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
